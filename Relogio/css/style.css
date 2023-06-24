@@ -48,6 +48,7 @@ button{
 button:hover{
     opacity: 0.8;
     scale: 0.95;
+    box-shadow: 3px 3px 10px var(--text);
 }
 #volta{
     background-color:var(--cor-btn-volta);
