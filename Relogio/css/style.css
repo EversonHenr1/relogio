@@ -1,0 +1,94 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  Helvetica;
+    color: var(--text);
+}
+:root{
+    --cor-background:#00994d;
+    --cor-btn-volta:#ffd700;
+    --cor-btn-pause:#003366;
+    --text:#fff;
+}
+body{
+    overflow: hidden;
+    background-color: var(--cor-background);
+    transition: 0.5s ease-in-out;
+}
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2.3em;
+    text-transform: uppercase;
+}
+p{
+    text-align: center;
+    font-size: 6em;
+    padding: 5px;
+    border-radius: 10px;
+}
+button{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--text);
+    width: 40%;
+    transition: 0.5s ease-in-out;
+    box-shadow: 5px 6px 2px var(--text);
+    font-size: 1.2em;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.8;
+    scale: 0.95;
+}
+#volta{
+    background-color:var(--cor-btn-volta);
+    display: none;
+    
+}
+#pause{
+    background-color:var(--cor-btn-pause);
+    display: none;
+}
+.hoverbtn{
+    box-shadow: none;
+}
+#container-btn{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.pauseON{
+    border: 1px solid var(--text);
+}
+select{
+    background-color: var(--cor-btn-volta);
+    padding: 8px;
+    border: 2px solid var(--cor-background);
+    outline: none;
+    transition: 0.4s ease-in-out;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#selecionar{
+    background-color: var(--cor-btn-volta);
+    width: max-content;
+    margin-left: 20px;
+}
+#paiSelect{
+    transition: 0.5s ease-in-out;
+}
+select:focus{
+    border: 2px solid var(--text);
+}
+
